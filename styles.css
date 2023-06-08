@@ -1,0 +1,196 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color-principal: #EB2759;
+    --color-secundary: #ECFF37;
+    --color-terciario: #FFD432;
+    --color-cuarto: #591902;
+    --color-quintuple: #B243FF;
+}
+
+body{
+    background-attachment: fixed;
+    background-image: url(./Imagenes/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+a{
+    color: unset;
+    text-decoration: none;
+}
+
+/*--------------------------------------------------------------*/
+
+/*HEADER*/
+
+header{
+    align-items: center;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    position: sticky;
+    left: 100%;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+header:hover{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.header_menu{
+    display: flex;
+    gap: 20px;
+}
+.header_redes_sociales{
+    display: flex;
+    font-size: 30px;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+img.logo_header_calavera{
+    width: 70px;
+}
+
+/*iconos*/
+.home_icon, .shop_icon, .look_for_icon{
+    display: inline;
+    width: 24px;
+}
+
+.header_menu a{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.header_menu a:hover{
+    color: rgba(219, 240, 237, 0.8);
+    position: relative;
+    text-decoration: underline;
+    top: -5px;
+}
+
+/*----------------------------------------------------------*/
+/*MAIN*/
+
+main h3,p{
+    color: var(--color-cuarto);
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 150px;
+}
+
+main img{
+    width: 350px;
+    object-fit: contain;
+}
+
+h2{
+    position: sticky;
+    left: 0;
+    right: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Righteous', cursive;
+    font-size: 35px;
+    color: var(--color-principal);
+    text-decoration: underline;
+}
+
+section{
+    display: flex;
+    width: 300px;
+    border-radius: 20px;
+}
+
+ /* article:hover{
+    box-shadow: -2px -2px 2px 1px black, 2px 2px 2px 1px black;
+    z-index: 999;
+    position: relative;
+    top: -10px;
+} */
+
+article{
+    background-color: rgba(245, 177, 212, 0.8);
+    padding: 20px;
+    gap: 10px;
+}
+
+.about_me{
+    position: static;
+    padding: 20px;
+}
+.about_the_page{
+    position: static;
+    padding: 20px;
+}
+.collaboration{
+    position: static;
+    padding: 20px;
+}
+
+
+
+
+
+/*-----------------------------------------------------------*/
+/*FOOTER*/
+footer{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    z-index: 999;
+} 
+footer:hover{
+    box-shadow: -2px -2px 2px 1px rgba(0, 0, 0, 0.2) 
+}
+
+.footer_redes{
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    gap: 20px;
+    justify-content: flex-end;
+    padding: 0 30px;
+}
+
+.derechos_autor{
+    color: black;
+    background-color: rgba(219, 240, 237, 0.8);
+}
+
+body{
+    display: block;
+    flex-direction: column;
+}
+
+
+/*MOVIL*/
+@media (max-width: 700px) {  
+    
+}
+
+/*TABLETS*/
+@media (max-width: 1200px){
+
+}
+
+/*ESCRITORIO (+1200PX)*/
