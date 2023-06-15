@@ -83,6 +83,14 @@ img.logo_header_calavera{
     top: -5px;
 }
 
+/*---------------------------------------------------------*/
+/*SUBMENU*/ 
+
+.submenu{
+    display: none;
+}
+
+
 /*----------------------------------------------------------*/
 /*MAIN*/
 
@@ -94,18 +102,16 @@ main{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 150px;
+    gap: 50px;
 }
 
 main img{
-    width: 350px;
+    width: 100%;
     object-fit: contain;
 }
 
-h2{
-    position: sticky;
-    left: 0;
-    right: 0;
+.tituloprincipal{
+    text-align: center;
     font-family: 'Bebas Neue', sans-serif;
     font-family: 'Righteous', cursive;
     font-size: 35px;
@@ -113,39 +119,19 @@ h2{
     text-decoration: underline;
 }
 
-section{
+.listcards{
     display: flex;
-    width: 300px;
     border-radius: 20px;
+    text-align: center;
+    gap: 100px;
 }
 
- /* article:hover{
-    box-shadow: -2px -2px 2px 1px black, 2px 2px 2px 1px black;
-    z-index: 999;
-    position: relative;
-    top: -10px;
-} */
 
 article{
     background-color: rgba(245, 177, 212, 0.8);
-    padding: 20px;
-    gap: 10px;
+    max-width: 1000px;
+    width: 30%;
 }
-
-.about_me{
-    position: static;
-    padding: 20px;
-}
-.about_the_page{
-    position: static;
-    padding: 20px;
-}
-.collaboration{
-    position: static;
-    padding: 20px;
-}
-
-
 
 
 
@@ -185,12 +171,21 @@ body{
 
 /*MOVIL*/
 @media (max-width: 700px) {  
+
+    .submenu{
+       display: block;
+       width: 24px;
+    }
+
+    .submenu img{
+        width: 100%;
+    }
     
 }
 
 /*TABLETS*/
 @media (max-width: 1200px){
-
+    
 }
 
 /*ESCRITORIO (+1200PX)*/

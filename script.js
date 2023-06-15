@@ -5,3 +5,9 @@ function precionarInterruptor(){
 
 // Utilizar CSS para estilizar
 /*HMLT = creamos un button y le agregamos una clase con la etiqueta "oneclick" */ 
+
+function precionarInterruptor(){
+
+    document.querySelector(".botonsubmenu").classList.toggle("visible");
+
+}
