@@ -17,7 +17,10 @@ body{
     background-image: url(./Imagenes/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    display: block;
+    flex-direction: column;
 }
+
 
 ul, ol{
     list-style: none;
@@ -163,25 +166,37 @@ footer:hover{
     background-color: rgba(219, 240, 237, 0.8);
 }
 
-body{
-    display: block;
-    flex-direction: column;
-}
+
+/*-----------------------------------------------------------------------------------------------*/
+
+/* MEDIA QUERY*/
 
 
 /*MOVIL*/
 @media (max-width: 700px) {  
 
-    .submenu{
-       display: block;
-       width: 24px;
+    /*.submenu{
+        display: block;
+    }
+    .burgerMenu{
+        width: 200px;
+        position: absolute;
+        right:  0;
+        top: 0;
+    }
+    .visible{
+        display: none;
+    }
+    .burgerMenu nav ul{
+        flex-direction: column;
     }
 
-    .submenu img{
-        width: 100%;
-    }
+    header nav{
+        display: none;
+    }*/
     
 }
+    
 
 /*TABLETS*/
 @media (max-width: 1200px){
