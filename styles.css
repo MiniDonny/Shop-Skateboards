@@ -67,7 +67,7 @@ img.logo_header_calavera{
 }
 
 /*iconos*/
-.home_icon, .shop_icon, .look_for_icon{
+.home_icon,.look_for_icon{
     display: inline;
     width: 24px;
 }
@@ -87,12 +87,23 @@ img.logo_header_calavera{
 }
 
 /*---------------------------------------------------------*/
+
 /*SUBMENU*/ 
 
 .submenu{
     display: none;
+    width: 24px;
+    height: 24px;
 }
 
+.submenu img{
+    width: 24px;
+    height: 24px;
+}
+
+.submenu{
+    background: none;
+}
 
 /*----------------------------------------------------------*/
 /*MAIN*/
@@ -175,25 +186,18 @@ footer:hover{
 /*MOVIL*/
 @media (max-width: 700px) {  
 
-    /*.submenu{
+    .submenu{
         display: block;
     }
-    .burgerMenu{
-        width: 200px;
+    .mainmenu{
+        flex-direction: column;
         position: absolute;
-        right:  0;
+        right: 0;
         top: 0;
     }
-    .visible{
-        display: none;
-    }
-    .burgerMenu nav ul{
+    .mainmenu nav ul{
         flex-direction: column;
     }
-
-    header nav{
-        display: none;
-    }*/
     
 }
     
